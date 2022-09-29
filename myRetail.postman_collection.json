@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8d9e6c82-4ec6-4e4d-bb3f-bea0a25a770e",
+		"name": "myRetail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/products/12954218",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"products",
+						"12954218"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 12954218,\n    \"name\": \"Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz\",\n    \"current_price\": {\n        \"value\": 12.49,\n        \"currency_code\": \"USD\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/products/12954218",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"products",
+						"12954218"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
